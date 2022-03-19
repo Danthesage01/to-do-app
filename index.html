@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <h2>To-Do Today </h2>
+    <form id="todo-form">
+      <div>
+        <label for="day">Day</label>
+        <input type="text" id="day" class="u-full-width" placeholder="Which day?">
+      </div>
+      <div>
+        <label for="activity">Activity</label>
+        <input type="text" id="activity" class="u-full-width" placeholder="What to do?">
+      </div>
+      
+      <div>
+        <label for="start-time">Start</label>
+        <input type="time" id="start-time" class="u-full-width" min="00:00" max="23:59" placeholder="Time to start">
+      </div>
+      <div>
+        <label for="stop-time">Stop</label>
+        <input type="time" id="stop-time" class="u-full-width"   min="00:00" max="23:59" placeholder="Time to stop">
+      </div>
+      <div>
+        <input type="submit" id="submit-btn" value="Add To-Do">
+      </div>
+    </form>
+   
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+          <th>Start</th>
+          <th>Stop</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="todo-body"></tbody>
+    </table>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

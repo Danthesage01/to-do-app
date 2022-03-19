@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.success,
+.error,
+.complete, 
+.incomplete{
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+.success,
+.complete {
+  background: green;
+}
+.error,
+.incomplete{
+  background: red;
+}
